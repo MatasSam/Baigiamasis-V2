@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+}
+
+nav {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  font-family: montserrat;
+  height: 72px;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  margin-right: 100px;
+}
+
+.links a {
+  opacity: 0.69;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+#burger {
+  display: none;
+}
+
+section.purpose {
+  margin-top: 72px;
+  // background: url(../images/skyscrapers.png);
+  background: url(../images/skyscrapers.png);
+  background-size: cover;
+  background-position: center;
+  height: 639px;
+}
+
+div.introducing {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+section.purpose img {
+  margin-top: 66px;
+}
+
+section.purpose h1 {
+  margin-top: 23px;
+  max-width: 435px;
+  font-size: 36px;
+  color: white;
+}
+
+section.purpose p {
+  margin-top: 67px;
+  width: 651px;
+  font-size: 16px;
+  opacity: 0.8;
+  color: white;
+}
+
+section.purpose button {
+  margin-top: 43px;
+  width: 135px;
+  height: 42px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+}
+
+.orange {
+  color: orange;
+}
+
+section.purpose form {
+  width: 360px;
+  height: 425px;
+  background: white;
+  margin-top: 75px;
+  border-radius: 5px;
+}
+
+div.form {
+  margin-left: 65px;
+}
+
+form h2 {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 17px;
+}
+
+form h3 {
+  padding-left: 50px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 46px;
+}
+
+input[type="text"] {
+  margin-top: 24px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+  color: #D8D8D8;
+  line-height: 16px;
+}
+
+div.contact-info {
+  padding-left: 50px;
+}
+
+input[type="radio"]  {
+  margin-top: 18px;
+}
+
+div.radio-btn {
+  font-size: 9px;
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+input[type="submit"] {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+  background: #41D395;
+  border: none;
+  width: 360px;
+  height: 58px;
+  border-radius: 0px 0px 5px 5px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+section.social {
+  height: 105px;
+  background: #FFFFFF;
+  font-family: montserrat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+section.social img {
+  height: 30px;
+}
+
+div.social-text h3 {
+  font-size: 20px;
+}
+
+div.social-text p {
+  margin-top: 5px;
+  max-width: 394px;
+  font-size: 14px;
+}
+
+div.social-icon {
+  display: flex;
+  gap: 80px;
+}
+
+section.praleista-1 {
+  background: url(../images/mountains.png);
+  background-size: cover;
+  background-position: center;
+  height: 595px;
+}
+
+section.explanation {
+  display: flex;
+  gap: 168px;
+  background: #1C1C1C;
+  align-items: center;
+  justify-content: center;
+  height: 595px;
+}
+
+div.logo2 img {
+  width: 389px;
+}
+
+div.erat {
+  width: 460px;
+}
+
+div.erat h2 {
+  color: #FFFFFF;
+  font-size: 30px;
+  width: 350px;
+  margin-bottom: 56px;
+}
+
+div.erat h4 {
+  color: #FFFFFF;
+  margin-top: 43px;
+}
+
+div.erat p {
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: justify;
+}
+
+div.erat img {
+  margin-right: 20px;
+  margin-top: 43px;
+  width: 50px;
+}
+
+div.split1 {
+  display: flex;
+}
+
+div.split2 {
+  display: flex;
+}
+
+section.awesome {
+  height: 592px;
+}
+
+div.advantages {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 95px;
+}
+
+.paragraph {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 65px;
+  font-size: 14px;
+  color: #86878B;
+}
+
+section.awesome h2 {
+  color: #212121;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 99px;
+}
+
+section.awesome h3 {
+  margin-top: 35px;
+  color: #333333;
+}
+
+div.advantages img {
+  width: 20px;
+}
+
+div.benefits {
+  text-align: center;
+  width: 286px;
+}
+
+div.benefits p {
+  font-size: 14px;
+  color: #86878B;
+  margin-top: 27px;
+}
+
+@media (max-width: 768px){
+  .links {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+    margin-right: 50px;
+  }
+}
