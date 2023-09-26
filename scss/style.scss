@@ -22,6 +22,7 @@ nav {
   position: fixed;
   top: 0;
   text-decoration: none;
+  z-index: 999;
 }
 
 nav a {
@@ -54,7 +55,7 @@ nav a {
 
 section.purpose {
   margin-top: 72px;
-  // background: url(../images/skyscrapers.png);
+  font-family: montserrat;
   background: url(../images/skyscrapers.png);
   background-size: cover;
   background-position: center;
@@ -63,9 +64,9 @@ section.purpose {
 
 div.introducing {
   display: flex;
-  margin: auto;
   justify-content: center;
   align-items: center;
+  margin: auto 30px;
 }
 
 section.purpose img {
@@ -81,7 +82,7 @@ section.purpose h1 {
 
 section.purpose p {
   margin-top: 67px;
-  width: 651px;
+  max-width: 651px;
   font-size: 16px;
   opacity: 0.8;
   color: white;
@@ -103,16 +104,16 @@ section.purpose button {
 section.purpose form {
   width: 360px;
   height: 425px;
-  background: white;
+  background: #FFFFFF;
   margin-top: 75px;
   border-radius: 5px;
 }
 
-div.form {
+section.purpose div.form {
   margin-left: 65px;
 }
 
-form h2 {
+section.purpose form h2 {
   color: #333333;
   font-size: 20px;
   font-weight: 600;
@@ -120,7 +121,7 @@ form h2 {
   padding-top: 17px;
 }
 
-form h3 {
+section.purpose form h3 {
   padding-left: 50px;
   color: #333333;
   font-size: 16px;
@@ -177,6 +178,7 @@ section.social {
   align-items: center;
   justify-content: center;
   gap: 100px;
+  margin: auto 30px;
 }
 
 section.social img {
@@ -212,6 +214,8 @@ section.explanation {
   align-items: center;
   justify-content: center;
   height: 595px;
+  font-family: montserrat;
+  padding: 0 30px;
 }
 
 div.logo2 img {
@@ -256,6 +260,7 @@ div.split2 {
 
 section.awesome {
   height: 592px;
+  font-family: montserrat;
 }
 
 div.advantages {
@@ -299,6 +304,284 @@ div.benefits p {
   color: #86878B;
   margin-top: 27px;
 }
+
+section.pricing {
+  font-family: montserrat;
+  background: #6696E2;
+  height: 883px;
+}
+
+section.pricing > h2 {
+  padding-top: 97px;
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+}
+
+section.pricing > p {
+  margin-top: 50px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.box {
+  width: 343px;
+  margin-top: 119px;
+}
+
+.price-top {
+  background: #333333;
+  height: 210px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+div.box .green {
+  background: #41D395;
+  height: 6px;
+}
+
+.price-bottom {
+  background: #FFFFFF;
+  height: 240px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  margin: auto 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding-top: 14px;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 94px;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 13px;
+}
+
+h2 .smaller-price {
+  font-size: 35px;
+}
+
+.price-top p {
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 50%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.box-tall {
+  width: 343px;
+  margin-top: 83px;
+}
+
+div.box-tall .green {
+  background: #41D395;
+  height: 40px;
+}
+
+div.box-tall div.green {
+  text-align: center;
+  padding-top: 10px;
+  color: #FFFFFF;
+}
+
+div.price-bottom p {
+  text-align: center;
+  color: #86878B;
+  padding: 10px 0;
+}
+
+section.slider {
+  background: #FFFFFF;
+  height: 591px;
+  font-family: montserrat;
+}
+
+section.slider h2 {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 67px;
+}
+
+div.swiper-slide p.quote {
+  width: 30vh;
+  background: #6696E2;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 15px;
+  line-height: 25px;
+}
+
+div.person {
+  margin-top: 19px;
+  display: flex;
+}
+
+div.person .name {
+  color: #333333;
+  font-size: 20px;
+}
+
+div.person .job {
+  color: #86878B;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+div.person div {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+div.swiper-slide {
+  display: flex;
+  justify-content: center;
+  gap: 119px;
+}
+
+div.person2 {
+  margin-top: 25px;
+}
+
+.image-triangle {
+  position: relative;
+}
+
+.image-triangle::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  right: 20px;
+  border: 15px solid transparent;
+  border-top-color: #6696E2;
+}
+
+.swiper-pagination-bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.swiper-pagination-bullet {
+  background: none;
+  border: 2px solid #E27866;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #E27866;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper {
+  width: 1060px;
+  height: 350px;
+  margin-top: 91px;
+}
+
+section.contact-us {
+  height: 573px;
+  background: #E27866;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.contact-us h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #FFFFFF;
+  padding-top: 40px;
+}
+
+section.contact-us p {
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding-top: 50px;
+}
+
+section.contact-us form {
+  width: 390px;
+  height: 314px;
+  background: #FFFFFF;
+  margin-top: 27px;
+  border-radius: 5px;
+}
+
+.contact-info {
+  padding-top: 23px;
+}
+
+section.contact-us input[type="text"] {
+  width: 260px;
+  line-height: 20px;
+}
+
+section.contact-us div.contact-info {
+  padding-left: 65px;
+}
+
+section.contact-us div.radio-btn {
+  padding-left: 65px;
+}
+
+section.contact-us input[type="submit"] {
+  display: flex;
+  background: #41D395;
+  border: none;
+  width: 158px;
+  height: 48px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin: 42px auto;
+}
+
+footer {
+  background: #1C1C1C;
+  height: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer img {
+  height: 20px;
+}
+
+div.social-icon {
+  margin-left: 130px;
+}
+
+div.brand {
+  margin-right: 130px;
+  color: #FFFFFF;
+  opacity: 50%;
+}
+
 
 @media (max-width: 768px){
   .links {
