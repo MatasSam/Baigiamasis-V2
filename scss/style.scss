@@ -230,19 +230,6 @@ div.tab {
   }
 }
 
-// div.tab h2 {
-//   font-size: 36px;
-//   line-height: 35px;
-//   font-weight: 500;
-//   margin-bottom: 33px;
-// }
-
-// div.tab p {
-//   font-size: 14px;
-//   margin-top: 20px;
-//   text-align: justify;
-// }
-
 div.buttons {
   display: flex;
   flex-direction: column;
@@ -653,7 +640,39 @@ div.brand {
   opacity: 50%;
 }
 
-@media (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px){
+  .links {
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    margin-right: 0px;
+    background: #000000;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    transform: translateY(calc(-100% - 70px));
+  }
+
+  .showNav {
+    transform: translateY(0);
+  }
+
+  #burger {
+    cursor: pointer;
+    display: block;
+    color: #FFFFFF;
+    opacity: 0.69;
+    margin-right: 50px;
+    transition: 0.3s;
+  }
+
+  #burger.rotate {
+    transform: rotate(-90deg);
+  }
+
   section.purpose {
      height: 750px;
   }
@@ -739,69 +758,159 @@ div.brand {
     height: 280px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  footer div.social-icon {
+    margin-left: 50px;
+  }
+  
+  div.brand {
+    margin-right: 50px;
+  }
 }
 
-@media (max-width: 1024px){
-  .links {
-    position: absolute;
-    right: 0px;
-    top: 70px;
-    margin-right: 0px;
-    background: #000000;
-    width: 30%;
+@media (max-width: 768px){
+  section.purpose {
+    height: 1150px;
+  }
+  
+  div.introducing {
+    flex-direction: column;
+  }
+  
+  section.purpose p {
+    margin-top: 47px;
+  }
+  
+  section.purpose form {
+    max-width: 360px;
+  }
+  
+  section.purpose div.form {
+    margin: 0;
+  }
+
+  section.social {
+    gap: 60px;
+    margin: auto 20px;
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      text-align: justify;
+      font-size: 12px;
+      margin-top: 0px;
+    }
+  }
+
+  section.social img {
+    height: 25px;
+  }
+ 
+  div.social-icon {
+    display: flex;
+    gap: 30px;
+  }
+
+  section.tabs {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    gap: 30px;
-    transform: translateY(calc(-100% - 70px));
+    height: 1100px;
   }
 
-  .showNav {
-    transform: translateY(0);
+  div.tab {
+    margin-top: 70px;
+    h2 {
+      padding: 0 20px 0 20px;
+    }
+    p {
+      padding: 0 20px 0 20px;
+    }
   }
 
-  #burger {
-    cursor: pointer;
-    display: block;
-    color: #FFFFFF;
-    opacity: 0.69;
+  div.buttons {
+   flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+   gap: 40px;
+  }
+
+  div.buttons button {
+    height: 100px;
+    width: 100px;
+  }
+
+  .tab-image1 {
+    display: flex;
+    gap: 20px;
+  }
+
+  div.tab-image1 img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  div.tab-image2 img {
+    max-width: 420px;
+    max-height: 200px;
+  }
+
+  div.tab-images {
+    margin-top: 80px;
+    margin: 50px 30px 0 30px;
+  }
+
+  section.explanation {
+    flex-direction: column;
+   gap: 100px;
+    height: 800px;
+  }
+
+  div.logo2 img {
+   max-width: 300px;
+  }
+
+  div.erat {
+    width: 90%;
+  }
+
+  section.awesome {
+    height: 900px;
+  }
+  
+  div.advantages {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  section.pricing {
+    height: 1850px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .box {
+    margin-top: 30px;
+  }
+
+  .box-tall {
+    margin-top: 30px;
+  }
+
+  section.pricing > p {
+    margin-bottom: 20px;
+  }
+
+  footer div.social-icon {
+    margin-left: 50px;
+  }
+  
+  div.brand {
     margin-right: 50px;
-    transition: 0.3s;
-  }
-
-  #burger.rotate {
-    transform: rotate(-90deg);
   }
 }
