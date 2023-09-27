@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+$text-color1: #FFFFFF;
+$bg-color1: #000000;
+$bg-color2: #FFFFFF;
+$font1: "montserrat";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +17,14 @@ html {
 }
 
 body {
-  font-family: montserrat;
+  font-family: $font1;
 }
 
 nav {
-  background: #000000;
+  background: $bg-color1;
   display: flex;
   justify-content: space-between;
-  font-family: montserrat;
+  font-family: $font1;
   height: 72px;
   padding: 10px;
   align-items: center;
@@ -30,7 +36,7 @@ nav {
 }
 
 nav a {
-  color: #FFFFFF;
+  color: $text-color1;
   text-decoration: none;
 }
 
@@ -59,7 +65,7 @@ nav a {
 
 section.purpose {
   margin-top: 72px;
-  font-family: montserrat;
+  font-family: $font1;
   background: url(../images/skyscrapers.png);
   background-size: cover;
   background-position: center;
@@ -81,7 +87,7 @@ section.purpose h1 {
   margin-top: 23px;
   max-width: 435px;
   font-size: 36px;
-  color: white;
+  color: $text-color1;
 }
 
 section.purpose p {
@@ -89,7 +95,7 @@ section.purpose p {
   max-width: 651px;
   font-size: 16px;
   opacity: 0.8;
-  color: white;
+  color: $text-color1;
 }
 
 section.purpose button {
@@ -98,7 +104,7 @@ section.purpose button {
   height: 42px;
   border: 2px solid white;
   background: none;
-  color: white;
+  color: $text-color1;
 }
 
 .orange {
@@ -108,7 +114,7 @@ section.purpose button {
 section.purpose form {
   width: 360px;
   height: 425px;
-  background: #FFFFFF;
+  background: $bg-color2;
   margin-top: 75px;
   border-radius: 5px;
 }
@@ -170,14 +176,14 @@ input[type="submit"] {
   border-radius: 0px 0px 5px 5px;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: $text-color1;
   font-size: 18px;
 }
 
 section.social {
   height: 105px;
-  background: #FFFFFF;
-  font-family: montserrat;
+  background: $bg-color2;
+  font-family: $font1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,7 +221,7 @@ section.tabs {
 
 div.tab {
   max-width: 509px;
-  color: #FFFFFF;
+  color: $text-color1;
   margin-top: 150px;
   h2 {
     font-size: 36px;
@@ -244,7 +250,7 @@ div.buttons button {
   height: 100px;
   width: 100px;
   background: #E27866;
-  color: #FFFFFF;
+  color: $text-color1;
   border: none;
 }
 
@@ -276,7 +282,7 @@ section.explanation {
   align-items: center;
   justify-content: center;
   height: 595px;
-  font-family: montserrat;
+  font-family: $font1;
   padding: 0 30px;
 }
 
@@ -289,19 +295,19 @@ div.erat {
 }
 
 div.erat h2 {
-  color: #FFFFFF;
+  color: $text-color1;
   font-size: 30px;
   width: 350px;
   margin-bottom: 56px;
 }
 
 div.erat h4 {
-  color: #FFFFFF;
+  color: $text-color1;
   margin-top: 43px;
 }
 
 div.erat p {
-  color: #FFFFFF;
+  color: $text-color1;
   font-size: 14px;
   text-align: justify;
 }
@@ -322,7 +328,7 @@ div.split2 {
 
 section.awesome {
   height: 592px;
-  font-family: montserrat;
+  font-family: $font1;
 }
 
 div.advantages {
@@ -368,7 +374,7 @@ div.benefits p {
 }
 
 section.pricing {
-  font-family: montserrat;
+  font-family: $font1;
   background: #6696E2;
   height: 883px;
 }
@@ -376,7 +382,7 @@ section.pricing {
 section.pricing > h2 {
   padding-top: 97px;
   font-size: 36px;
-  color: #FFFFFF;
+  color: $text-color1;
   font-weight: 600;
   text-align: center;
 }
@@ -384,7 +390,7 @@ section.pricing > h2 {
 section.pricing > p {
   margin-top: 50px;
   font-size: 14px;
-  color: #FFFFFF;
+  color: $text-color1;
   text-align: center;
 }
 
@@ -405,7 +411,7 @@ div.box .green {
 }
 
 .price-bottom {
-  background: #FFFFFF;
+  background: $bg-color2;
   height: 240px;
   border-radius: 0px 0px 5px 5px;
 }
@@ -421,7 +427,7 @@ div.box .green {
 .container h3 {
   font-size: 20px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: $text-color1;
   padding-top: 14px;
   text-align: center;
 }
@@ -430,7 +436,7 @@ div.box .green {
   font-size: 94px;
   font-weight: 500;
   text-align: center;
-  color: #FFFFFF;
+  color: $text-color1;
   margin-top: 13px;
 }
 
@@ -440,7 +446,7 @@ h2 .smaller-price {
 
 .price-top p {
   font-size: 14px;
-  color: #FFFFFF;
+  color: $text-color1;
   opacity: 50%;
   text-align: center;
   margin-top: 5px;
@@ -459,7 +465,7 @@ div.box-tall .green {
 div.box-tall div.green {
   text-align: center;
   padding-top: 10px;
-  color: #FFFFFF;
+  color: $text-color1;
 }
 
 div.price-bottom p {
@@ -469,9 +475,9 @@ div.price-bottom p {
 }
 
 section.slider {
-  background: #FFFFFF;
+  background: $bg-color2;
   height: 591px;
-  font-family: montserrat;
+  font-family: $font1;
   h2 {
     font-size: 36px;
     text-align: center;
@@ -566,21 +572,21 @@ section.contact-us {
 section.contact-us h2 {
   text-align: center;
   font-size: 36px;
-  color: #FFFFFF;
+  color: $text-color1;
   padding-top: 40px;
 }
 
 section.contact-us p {
   text-align: center;
   font-size: 14px;
-  color: #FFFFFF;
+  color: $text-color1;
   padding-top: 50px;
 }
 
 section.contact-us form {
   width: 390px;
   height: 314px;
-  background: #FFFFFF;
+  background: $bg-color2;
   margin-top: 27px;
   border-radius: 5px;
   user-select: none;
@@ -612,7 +618,7 @@ section.contact-us input[type="submit"] {
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: $text-color1;
   font-size: 18px;
   margin: 42px auto;
 }
@@ -636,11 +642,11 @@ footer div.social-icon {
 
 div.brand {
   margin-right: 130px;
-  color: #FFFFFF;
+  color: $text-color1;
   opacity: 50%;
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
+@media (max-width: 1024px){
   .links {
     position: absolute;
     right: 0px;
@@ -672,9 +678,11 @@ div.brand {
   #burger.rotate {
     transform: rotate(-90deg);
   }
+}
 
+@media (min-width: 769px) and (max-width: 1024px){
   section.purpose {
-     height: 750px;
+  height: 750px;
   }
 
   section.social img {
