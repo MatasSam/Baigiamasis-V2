@@ -1,0 +1,41 @@
+nav {
+    background: $bg-color1;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font1;
+    height: 72px;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-decoration: none;
+    z-index: 999;
+    a {
+      color: $text-color1;
+      text-decoration: none;
+    }
+  }
+  
+  .logo {
+    margin-left: 100px;
+  }
+  
+  .links {
+    display: flex;
+    gap: 40px;
+    margin-right: 100px;
+  }
+  
+  .links a {
+    opacity: 0.69;
+    transition: 0.3s;
+  }
+  
+  .links a:hover {
+    opacity: 1;
+  }
+  
+  #burger {
+    display: none;
+  }
